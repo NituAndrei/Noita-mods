@@ -1,0 +1,8 @@
+Working with original release version:
+0) Go to *username*\AppData\LocalLow\Nolla_Games_Noita\save00
+1) Delete everything except for the folders "persistent" and "stats"
+2) Open noita.exe with your debugger of choice
+3) Make sure the game doesn't actually start when you open it with the debugger (if using x96dbg, make sure "Entry breakpoint" is checked)
+4) Set breakpoint at instruction 00FCC113 (mov dword ptr ds:[17FC638],eax)
+5) Run to breakpoint
+6) Set eax to desired seed
